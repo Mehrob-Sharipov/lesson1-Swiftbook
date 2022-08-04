@@ -25,19 +25,40 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GPw-U6-At5">
+                                <rect key="frame" x="122" y="719" width="170" height="51"/>
+                                <color key="backgroundColor" red="0.94328004119999997" green="0.84577207590000003" blue="0.35560855429999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="148" id="X30-4G-GFE"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Show Text!">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="31"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xVZ-g9-ZK0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                         <constraints>
                             <constraint firstItem="4K5-pT-jAC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bed-ai-oR1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4K5-pT-jAC" secondAttribute="trailing" constant="16" id="htD-Ec-agf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GPw-U6-At5" secondAttribute="bottom" constant="92" id="i9N-8k-Q7N"/>
                             <constraint firstItem="4K5-pT-jAC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="m9f-7D-3N5"/>
+                            <constraint firstItem="GPw-U6-At5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r3k-kT-hhw"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="button" destination="GPw-U6-At5" id="yBi-Pj-Sos"/>
+                        <outlet property="lable" destination="4K5-pT-jAC" id="YCi-nS-Rcl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="35" y="98"/>
+            <point key="canvasLocation" x="34.782608695652179" y="97.767857142857139"/>
         </scene>
     </scenes>
     <resources>
